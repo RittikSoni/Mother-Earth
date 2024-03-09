@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1091959777847",
+    "project_id": "eco-collect-32195",
+    "storage_bucket": "eco-collect-32195.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091959777847:android:8a3be850f8ac22424eedb2",
+        "android_client_info": {
+          "package_name": "com.kingrittik.eco_collect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGAABlLjnPjVXmuR41efL30s9pM0bsUvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,138 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Level-04.tmx",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "C:/Users/RITTIK/Desktop/Android_iOS/iOS_Android/games/eco_collect/eco_collect/assets/tiles/Level-01.tmx": {
+            "expandedObjectLayers": [
+                3,
+                2
+            ],
+            "scale": 1.72484375,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 317.4200561645076,
+                "y": 182.3353564634478
+            }
+        },
+        "C:/Users/RITTIK/Desktop/Android_iOS/iOS_Android/games/eco_collect/eco_collect/assets/tiles/mother_earth_tiles.tsx": {
+            "scaleInDock": 1
+        },
+        "Level-01.tmx": {
+            "expandedObjectLayers": [
+                4,
+                2
+            ],
+            "scale": 1.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 1018.9999999999999,
+                "y": 181.66666666666669
+            }
+        },
+        "Level-02.tmx": {
+            "expandedObjectLayers": [
+                3,
+                2
+            ],
+            "scale": 1.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 1023.6666666666666,
+                "y": 183.66666666666669
+            }
+        },
+        "Level-03.tmx": {
+            "expandedObjectLayers": [
+                3,
+                2
+            ],
+            "scale": 1.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 1023.6666666666666,
+                "y": 184.33333333333334
+            }
+        },
+        "Level-04.tmx": {
+            "expandedObjectLayers": [
+                4,
+                2
+            ],
+            "scale": 2,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 1667.75,
+                "y": 215.75
+            }
+        },
+        "Nature_environment_01_tileset.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "Nature_props_01_tileset.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "PG tileset 2.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "PG tileset.tsx": {
+            "scaleInDock": 0.75,
+            "scaleInEditor": 1
+        },
+        "generic_platformer_tiles_tileset.tsx": {
+            "scaleInDock": 0.75,
+            "scaleInEditor": 1
+        },
+        "tileset_2_tileset.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "C:/Users/RITTIK/Desktop/Game Dev/2d-maps/PLATFORM_MAPS",
+    "map.height": 23,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 128,
+    "openFiles": [
+        "Level-02.tmx",
+        "Level-03.tmx",
+        "Level-04.tmx",
+        "PG tileset.tsx",
+        "PG tileset 2.tsx",
+        "Nature_props_01_tileset.tsx",
+        "tileset_2_tileset.tsx",
+        "Nature_environment_01_tileset.tsx",
+        "generic_platformer_tiles_tileset.tsx"
+    ],
+    "project": "Platform game tile project.tiled-project",
+    "recentFiles": [
+        "Level-02.tmx",
+        "Level-03.tmx",
+        "generic_platformer_tiles_tileset.tsx",
+        "Nature_environment_01_tileset.tsx",
+        "tileset_2_tileset.tsx",
+        "Nature_props_01_tileset.tsx",
+        "PG tileset 2.tsx",
+        "PG tileset.tsx",
+        "Level-04.tmx",
+        "Level-01.tmx",
+        "C:/Users/RITTIK/Desktop/Android_iOS/iOS_Android/games/eco_collect/eco_collect/assets/tiles/Level-01.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
