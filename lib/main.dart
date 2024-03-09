@@ -20,12 +20,6 @@ void main() async {
   );
   await SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
 
-  // await Firebase.initializeApp(
-  //   options: DefaultFirebaseOptions.currentPlatform,
-  // );
-
-  // runApp(const MyGame());
-
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );

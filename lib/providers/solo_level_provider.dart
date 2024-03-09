@@ -46,8 +46,8 @@ class SoloLevelProvider extends ChangeNotifier {
             levelTitle: levelsSnapshot.get('levelTitle'),
           ),
         );
+        notifyListeners();
       }
-
       notifyListeners();
     } catch (error) {
       KLoadingToast.showCustomDialog(
