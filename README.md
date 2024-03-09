@@ -1,12 +1,12 @@
 # Mother Earth
 
+**Mother Earth is more than just a game—it's a call to action, a testament to the power of collective effort, and a beacon of hope for a sustainable future. Join us on this extraordinary journey and let's change the world, one interactive experience at a time.**
+
 Embark on a transformative journey with Mother Earth, a revolutionary game platform designed to inspire and empower players to become stewards of environmental sustainability. Immerse yourself in a vibrant world where interactive mini-games, dynamic challenges, and immersive experiences await, all aligned with the **United Nations Sustainable Development Goals (SDGs)**.
 
 Discover the power of collective action as you join a global community of like-minded individuals, united in their commitment to preserving our planet for future generations. Engage in thrilling adventures that not only entertain but also educate, guiding you through real-world scenarios and empowering you to make meaningful choices that impact our world.
 
 Explore the beauty of nature through stunning visuals and **dynamic animations that evolve with the rhythm of day and night**, fostering a deep connection to the natural world. Earn virtual badges and rewards as you progress, showcasing your dedication to environmental stewardship and contributing to real-world causes through integrated donation features.
-
-**Mother Earth is more than just a game—it's a call to action, a testament to the power of collective effort, and a beacon of hope for a sustainable future. Join us on this extraordinary journey and let's change the world, one interactive experience at a time.**
 
 **Play Now on web:** [Mother Earth Web](https://eco-collect-32195.web.app/)
 
