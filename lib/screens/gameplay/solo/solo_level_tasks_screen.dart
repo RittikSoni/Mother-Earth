@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:confetti/confetti.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:eco_collect/api/firebase_apis.dart';
 import 'package:eco_collect/components/reusable_app_bar.dart';
 import 'package:eco_collect/components/reusable_bg_image.dart';
@@ -238,13 +239,13 @@ class _SoloLevelTasksScreenState extends State<SoloLevelTasksScreen> {
               const Text('Hurrayyy!!')
             ],
           ),
-          subTitle:
-              'You\'ve Successfully submitted the task!\nWhat next? wait for verification, and once done you can claim your rewards!!',
+          subTitle: 'task_statuses.submittedTask.message'.tr(),
           primaryAction: () {
             Navigator.pop(context);
             _controllerCenter.stop();
           },
-          primaryActionTitle: 'Awesomeeee!');
+          primaryActionTitle:
+              'task_statuses.submittedTask.primaryActionTitle'.tr());
     }
   }
 
@@ -278,25 +279,27 @@ class _SoloLevelTasksScreenState extends State<SoloLevelTasksScreen> {
           rewardXp: currentTask.xp,
         );
         KLoadingToast.showCharacterDialog(
-          title: 'Thank you for making a difference!',
-          message:
-              "Congratulations, Earth Champion!\nYou've propelled us closer to our goal of saving the planet!\nHere's your reward:\nXP: ${currentTask.xp}\nTrophies: ${currentTask.trophies}\nKeep shining bright, your efforts fuel our journey to a greener tomorrow!",
+          title: 'task_statuses.toClaimReward.title'.tr(),
+          message: tr('task_statuses.toClaimReward.message', namedArgs: {
+            'xp': currentTask.xp.toString(),
+            'trophies': currentTask.trophies.toString()
+          }),
           explorerImage: KExplorers.explorer8,
           barrierDismissible: false,
           canPop: false,
           hideSecondary: true,
-          primaryLabel: 'Claim Reward',
+          primaryLabel: 'task_statuses.toClaimReward.primaryLabel'.tr(),
           onPrimaryPressed: () {
             Navigator.pop(context);
           },
         );
       } else {
         KLoadingToast.showCharacterDialog(
-          title: 'Hurrayyy..!!',
+          title: 'task_statuses.alreadyCompletedTask.title'.tr(),
           explorerImage: KExplorers.explorer5,
-          message: 'You have already completed this level!',
+          message: 'task_statuses.alreadyCompletedTask.message'.tr(),
           hideSecondary: true,
-          primaryLabel: 'Let\'s Crush another!',
+          primaryLabel: 'task_statuses.alreadyCompletedTask.primaryLabel'.tr(),
           onPrimaryPressed: () {
             Navigator.pop(context);
           },
@@ -304,19 +307,19 @@ class _SoloLevelTasksScreenState extends State<SoloLevelTasksScreen> {
       }
     } else if (status == KenumSubmissionStatus.underVerificaiton.name) {
       KLoadingToast.showCharacterDialog(
-        message:
-            "Your task is currently undergoing verification, a crucial step on our journey to change the world. Your commitment to making a difference is truly inspiring! Hang tight, and together, we'll soon celebrate another victory for our planet.",
+        title: 'task_statuses.underVerification.title'.tr(),
+        message: 'task_statuses.underVerification.message'.tr(),
         explorerImage: KExplorers.explorer8,
         hideSecondary: true,
-        primaryLabel: "Let's Crush More Tasks!",
+        primaryLabel: 'task_statuses.underVerification.primaryLabel'.tr(),
         onPrimaryPressed: () {
           Navigator.pop(context);
         },
-        title: 'Under Review',
       );
     } else if (status == KenumSubmissionStatus.verificationFailed.name) {
       KLoadingToast.showNotification(
-        msg: submissionTask?.issueDetails ?? "Please submit again.",
+        msg: submissionTask?.issueDetails ??
+            'task_statuses.verificationFailed.message'.tr(),
         toastType: KenumToastType.error,
         durationInSeconds: 3,
       );

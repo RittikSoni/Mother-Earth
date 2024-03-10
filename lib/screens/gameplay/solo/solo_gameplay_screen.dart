@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:eco_collect/components/buttons/reusable_button.dart';
 
 import 'package:eco_collect/components/reusable_bg_image.dart';
@@ -52,14 +53,13 @@ class SoloGameplayScreen extends StatelessWidget {
             child: ListView(
               shrinkWrap: true,
               children: [
-                const ReusableTopCharacterDialogue(
+                ReusableTopCharacterDialogue(
                   explorerImagePath: KExplorers.explorer8,
-                  message:
-                      "Welcome to the Task Hub, aligned with the United Nations Sustainable Development Goals! Explore a spectrum of challenges crafted to address global issues like poverty, climate action, and equality. Each task is a step towards a brighter future for all. Let's unite our efforts and leave a lasting impact on the world.",
+                  message: "soloLevelGamePlayScreen.welcome_to_task_hub".tr(),
                 ),
                 Commonfunctions.gapMultiplier(gapMultiplier: 0.5),
                 ReusableButton(
-                  label: 'Mini-Games Zone ',
+                  label: 'soloLevelGamePlayScreen.mini_games_zone'.tr(),
                   icon: Icons.gamepad_outlined,
                   onTap: () {
                     KRoute.push(context: context, page: const MiniGames());

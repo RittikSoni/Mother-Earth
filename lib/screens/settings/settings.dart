@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:eco_collect/components/reusable_app_bar.dart';
 import 'package:eco_collect/components/reusable_bg_image.dart';
 import 'package:eco_collect/constants/kassets.dart';
@@ -67,15 +68,17 @@ class Settings extends StatelessWidget {
                               case "日本語":
                                 userData.setCurrentUserTempCountry =
                                     KenumPlayerTempCountry.japan;
+                                context.setLocale(const Locale('ja', 'JP'));
 
                                 break;
                               default:
                                 userData.setCurrentUserTempCountry =
                                     KenumPlayerTempCountry.other;
+                                context.setLocale(const Locale('en', 'US'));
                             }
                           },
                         ),
-                      )
+                      ),
                     ],
                   ),
                   const Text(

@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:eco_collect/components/buttons/reusable_current_tier_button.dart';
 import 'package:eco_collect/constants/kenums.dart';
 import 'package:eco_collect/constants/kshowcase_keys.dart';
@@ -31,7 +32,8 @@ PreferredSize globalAppBar(BuildContext context) {
                 title: KShowcaseData.appBarBadge.title,
                 description: KShowcaseData.appBarBadge.description,
                 child: const ReusableTierImageButton()),
-        title: Text('Hi! ${userProvider.getUserData?.fullName}'),
+        title:
+            Text('${"hi_message".tr()} ${userProvider.getUserData?.fullName}'),
         actions: [
           // User Card collection
           Showcase(

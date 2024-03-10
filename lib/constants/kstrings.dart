@@ -7,8 +7,6 @@ class KStrings {
   static const String appTitle = 'Mother Earth';
   static const String logoutMessage =
       'Are you sure you want to log out? Remember, every moment counts in our journey towards a sustainable future. Your contributions make a difference! Come back soon to continue making an impact.';
-  static const String defaultMessageToWorld =
-      "Dear World,\nIn the midst of chaos and uncertainty, let's remember the power of compassion, unity, and resilience. Together, we can overcome any challenge and build a future filled with hope, kindness, and possibility. Let's stand together, shoulder to shoulder, and create a world where everyone can thrive.\nWith love and solidarity, Earth";
   static const String defaultVideoUrl =
       'https://youtu.be/80biIVdUkzM?si=KwIQ9ljdNx2OGVd0';
   static const String defaultUsername = 'mother_earth';
@@ -20,13 +18,6 @@ class KStrings {
   // Donation
   static const String donationLink =
       'https://www.globalcitizen.org/en/involved/donate/';
-
-  // G-CHAT THINGS
-  static final String privacyMessage = Commonfunctions.getLanguageCodes()
-              .languageCode ==
-          'jp'
-      ? "チャットで機密データの共有を避けましょう。安全で安全に保ちましょう。 🛡️"
-      : "Avoid sharing sensitive data in the chat. Keep it safe and secure. 🛡️";
 
   // Functional things
   static final dummyUserData = UserDataModel(

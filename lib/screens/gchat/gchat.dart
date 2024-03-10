@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:eco_collect/components/reusable_bg_image.dart';
 import 'package:eco_collect/components/reusable_textformfield.dart';
 import 'package:eco_collect/constants/kassets.dart';
 import 'package:eco_collect/constants/kenums.dart';
-import 'package:eco_collect/constants/kstrings.dart';
 import 'package:eco_collect/constants/ktheme.dart';
 import 'package:eco_collect/models/g_chat_user_model.dart';
 import 'package:eco_collect/providers/message_configs_provider.dart';
@@ -36,7 +36,7 @@ class _GChatState extends State<GChat> {
   Widget build(BuildContext context) {
     AudioServices.playAudioAccordingToScreen(KenumScreens.gChat);
     KLoadingToast.showNotification(
-      msg: KStrings.privacyMessage,
+      msg: 'avoid_sharing_sensitive_data'.tr(),
       toastType: KenumToastType.info,
       crossPage: false,
       durationInSeconds: 5,

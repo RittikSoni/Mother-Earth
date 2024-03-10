@@ -1,0 +1,74 @@
+{
+  "hi_message": "Hi!",
+  "connect_with_google_wallet": "Easily connect with others using Google Wallet! 💳💬",
+  "share_profile_with_google_wallet": "Now, you can share or save your profile with others using Google Wallet (if available in your country)! 🌍💳 Connect with others and showcase your achievements effortlessly!",
+  "check_current_level": "Easily connect with others using Google Wallet! 💳💬",
+  "check_out_current_level": "Check out your current level! Complete tasks to level up and unlock new achievements! 🚀🎮",
+  "submit_video": "Once you're ready, hit submit! Our team will review your video to ensure it aligns with the task.",
+  "claim_rewards": "Once verified, you can claim your rewards! Plus, if you choose to be a hero, your video will be seen by millions worldwide! 🌟🌍",
+  "be_a_hero": "Be a hero! ✨ By checking this box, your video will reach millions worldwide, spreading your message far and wide. Let's make a difference together! 🌍",
+  "share_powerful_message": "Share your powerful message with the world through this video. 🌍✨ Let your voice be heard and inspire positive change!",
+  "share_youtube_link": "Share your task's YouTube link right here! 📹✨",
+  "check_out_profile_options": "Check out your profile for options like 💳 Google Wallet integration, 📈 level tracking, 🏆 trophies, and more!",
+  "unlock_badges": "Unlock badges by completing tasks! 🏅",
+  "avoid_sharing_sensitive_data": "Avoid sharing sensitive data in the chat. Keep it safe and secure. 🛡️",
+  "confirm_logout": "Are you sure you want to log out? Remember, every moment counts in our journey towards a sustainable future. Your contributions make a difference! Come back soon to continue making an impact.",
+  "dear_world_message": "Dear World,\nIn the midst of chaos and uncertainty, let's remember the power of compassion, unity, and resilience. Together, we can overcome any challenge and build a future filled with hope, kindness, and possibility. Let's stand together, shoulder to shoulder, and create a world where everyone can thrive.\nWith love and solidarity, Earth",
+  "soloLevelGamePlayScreen": {
+    "welcome_to_task_hub": "Welcome to the Task Hub, aligned with the United Nations Sustainable Development Goals! Explore a spectrum of challenges crafted to address global issues like poverty, climate action, and equality. Each task is a step towards a brighter future for all. Let's unite our efforts and leave a lasting impact on the world.",
+    "mini_games_zone": "Mini-Games Zone"
+  },
+
+  "leaderboard_screen": {
+    "welcome_message": "Welcome to the Leaderboard! Witness the triumphs of our Eco-Champions as their verified task videos light up the screen. Let their dedication inspire you to join the ranks of environmental warriors!",
+
+    "dear_world_message": "Dear World,\nIn the midst of chaos and uncertainty, let's remember the power of compassion, unity, and resilience. Together, we can overcome any challenge and build a future filled with hope, kindness, and possibility. Let's stand together, shoulder to shoulder, and create a world where everyone can thrive.\nWith love and solidarity, Earth"
+  },
+
+  "badges_screen": {
+    "congratulations_message": "Congratulations! We've conquered the {formattedPlayerCurrentTier} badge! Now, let's ignite our determination and tackle more tasks to soar to even greater heights. Remember, every small action fuels our journey to success!",
+    "message_unlocked": "Way to go! We've unlocked this badge, and we're just getting started. Let's keep the momentum going and conquer the next challenge together! 💪",
+    "message_progress": "Hey there! We're just {trophyDifference} trophies away from our goal. Let's crush it together! 💪"
+  },
+
+  "buttons": {
+    "settings": "Settings",
+    "donate": "Donate",
+    "logout": "Logout",
+    "cancel": "Cancel"
+  },
+
+  "donate_screen": {
+    "message": "Your generosity can change lives! Your donation will support our efforts to protect the environment and create a sustainable future for all. Thank you for being a part of this important mission.",
+    "make_a_difference": "Make a Difference",
+    "donate_now": "Donate Now"
+  },
+
+  "task_statuses": {
+    "toClaimReward": {
+      "title": "Thank you for making a difference!",
+      "message": "Congratulations, Earth Champion!\nYou've propelled us closer to our goal of saving the planet!\nHere's your reward:\nXP: {xp}\nTrophies: {trophies}\nKeep shining bright, your efforts fuel our journey to a greener tomorrow!",
+      "primaryLabel": "Claim Reward"
+    },
+    "alreadyCompletedTask": {
+      "title": "Hurrayyy..!!",
+      "message": "You have already completed this level!",
+      "primaryLabel": "Let's Crush another!"
+    },
+    "underVerification": {
+      "title": "Under Review",
+      "message": "Your task is currently undergoing verification, a crucial step on our journey to change the world. Your commitment to making a difference is truly inspiring! Hang tight, and together, we'll soon celebrate another victory for our planet.",
+      "primaryLabel": "Let's Crush More Tasks!"
+    },
+    "verificationFailed": {
+      "message": "Please submit again."
+    },
+    "submittedTask": {
+      "title": "Hurrayyy!!",
+      "message": "You've Successfully submitted the task!\nWhat next? wait for verification, and once done you can claim your rewards!!",
+      "primaryActionTitle": "Awesomeeee!"
+    }
+  },
+
+  "logout_confirmation": "Are you sure you want to log out? Remember, every moment counts in our journey towards a sustainable future. Your contributions make a difference! Come back soon to continue making an impact."
+}

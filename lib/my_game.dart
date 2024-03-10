@@ -1,5 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:bot_toast/bot_toast.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:eco_collect/api/firebase_apis.dart';
 import 'package:eco_collect/components/error_app.dart';
 import 'package:eco_collect/constants/kstrings.dart';
@@ -55,6 +56,9 @@ class MyGame extends StatelessWidget {
       ],
       builder: (context, child) => MaterialApp(
         title: KStrings.appTitle,
+        localizationsDelegates: context.localizationDelegates,
+        supportedLocales: context.supportedLocales,
+        locale: context.locale,
         debugShowCheckedModeBanner: false,
         builder: BotToastInit(),
         navigatorObservers: [BotToastNavigatorObserver()],

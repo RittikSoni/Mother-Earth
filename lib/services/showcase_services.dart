@@ -23,52 +23,22 @@ class ShowcaseServices {
         await showDialog(
             context: context,
             barrierDismissible: false,
-            builder: (context) => ReusableCharacterDialog(
-                  onPrimaryPressed: () {
-                    Navigator.pop(context);
-                    tempShowTutorial = true;
-                    userProvider.setShowTutorial = true;
-                  },
-                  hideSecondary: true,
-                  onSecondaryPressed: () {
-                    Navigator.pop(context);
-                    userProvider.setIsFirstTimeUser = false;
-                    userProvider.setShowTutorial = false;
-                  },
+            builder: (context) => PopScope(
+                  canPop: false,
+                  child: ReusableCharacterDialog(
+                    onPrimaryPressed: () {
+                      Navigator.pop(context);
+                      tempShowTutorial = true;
+                      userProvider.setShowTutorial = true;
+                    },
+                    hideSecondary: true,
+                    onSecondaryPressed: () {
+                      Navigator.pop(context);
+                      userProvider.setIsFirstTimeUser = false;
+                      userProvider.setShowTutorial = false;
+                    },
+                  ),
                 ));
-        // IS FIRST TIME AND HAVEN'T SHOWED THIS DIALOG YET.
-        // await KLoadingToast.showDialogMultipleButtons(
-        //     title: 'Welcome to Mother Earth: Start Your Eco-Adventure!',
-        //     subtitle:
-        //         'Step into the world of Mother Earth, where every choice counts! 🌍✨ Are you ready to begin your eco-adventure?\nStart your journey now by diving into our interactive tutorial!',
-        //     widgets: [
-        //       Expanded(
-        //         child: ReusableButton(
-        //           insidePadding: 10.0,
-        //           label: 'Skip',
-        //           icon: Icons.skip_next_rounded,
-        //           onTap: () {
-        //             Navigator.pop(context);
-        //             userProvider.setIsFirstTimeUser = false;
-        //             userProvider.setShowTutorial = false;
-        //           },
-        //         ),
-        //       ),
-        //       Commonfunctions.gapMultiplier(
-        //           isHorizontal: true, gapMultiplier: 0.2),
-        //       Expanded(
-        //         child: ReusableButton(
-        //           insidePadding: 10.0,
-        //           label: 'Let\'s Go!',
-        //           icon: Icons.filter_drama_rounded,
-        //           onTap: () {
-        //             Navigator.pop(context);
-        //             tempShowTutorial = true;
-        //             userProvider.setShowTutorial = true;
-        //           },
-        //         ),
-        //       ),
-        //     ]);
       }
       if (userProvider.showTutorial == true || tempShowTutorial) {
         // IS FIRST TIME AND WANT TO SEE TUTORIAL.

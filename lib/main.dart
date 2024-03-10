@@ -1,5 +1,6 @@
 // ignore_for_file: body_might_complete_normally_catch_error
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:eco_collect/components/error_app.dart';
 import 'package:eco_collect/components/no_internet_screen.dart';
 import 'package:eco_collect/firebase_options.dart';
@@ -14,6 +15,7 @@ import 'package:flutter/services.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
 
   await SystemChrome.setPreferredOrientations(
     [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown],
@@ -40,7 +42,14 @@ void main() async {
       await messaging.subscribeToTopic("motherEarth");
     }
 
-    runApp(const MyGame());
+    runApp(
+      EasyLocalization(
+        supportedLocales: const [Locale('en', 'US'), Locale('ja', 'JP')],
+        path: 'assets/translations',
+        fallbackLocale: const Locale('en', 'US'),
+        child: const MyGame(),
+      ),
+    );
   } else {
     // NO INTERNET
 

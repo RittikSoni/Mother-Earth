@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:eco_collect/api/firebase_apis.dart';
 import 'package:eco_collect/components/buttons/reusable_button.dart';
 import 'package:eco_collect/components/reusable_bg_image.dart';
@@ -26,21 +27,20 @@ class Explore extends StatelessWidget {
           Column(
             children: [
               ReusableButton(
-                label: 'Settings',
+                label: 'buttons.settings'.tr(),
                 icon: Icons.settings,
                 onTap: () =>
                     KRoute.push(context: context, page: const Settings()),
               ),
               ReusableButton(
-                  label: 'Donate',
+                  label: 'buttons.donate'.tr(),
                   onTap: () async {
                     KLoadingToast.showCharacterDialog(
-                        title: "Make a Difference",
-                        message:
-                            "Your generosity can change lives! Your donation will support our efforts to protect the environment and create a sustainable future for all. Thank you for being a part of this important mission.",
+                        title: "donate_screen.make_a_difference".tr(),
+                        message: 'donate_screen.message'.tr(),
                         explorerImage: KExplorers.explorer8,
-                        primaryLabel: "Donate Now",
-                        secondaryLabel: "Cancel",
+                        primaryLabel: "donate_screen.donate_now".tr(),
+                        secondaryLabel: "buttons.cancel".tr(),
                         onSecondaryPressed: () {
                           Navigator.pop(context);
                         },
@@ -62,17 +62,17 @@ class Explore extends StatelessWidget {
                         });
                   }),
               ReusableButton(
-                label: 'Logout',
+                label: 'buttons.logout'.tr(),
                 onTap: () async {
                   KLoadingToast.showCharacterDialog(
-                    title: 'Logout?',
-                    message: KStrings.logoutMessage,
+                    title: 'buttons.logout'.tr(),
+                    message: 'logout_confirmation'.tr(),
                     explorerImage: KExplorers.explorer7,
-                    secondaryLabel: 'Cancel',
+                    secondaryLabel: 'buttons.cancel'.tr(),
                     onSecondaryPressed: () async {
                       Navigator.pop(context);
                     },
-                    primaryLabel: 'Logout',
+                    primaryLabel: 'buttons.logout'.tr(),
                     onPrimaryPressed: () async {
                       await FirebaseApis.logout();
                     },

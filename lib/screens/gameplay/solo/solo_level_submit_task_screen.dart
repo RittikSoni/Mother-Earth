@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:eco_collect/api/firebase_apis.dart';
 import 'package:eco_collect/components/buttons/reusable_button.dart';
 import 'package:eco_collect/components/reusable_app_bar.dart';
@@ -114,8 +115,7 @@ class _SoloLevelSubmitTaskScreenState extends State<SoloLevelSubmitTaskScreen> {
                             });
                           },
                           title: const Text('Be a HERO'),
-                          subtitle:
-                              Text(KShowcaseData.beAHeroCheck.description),
+                          subtitle: Text('be_a_hero'.tr()),
                         ),
                       ),
                     ),

@@ -1,7 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:eco_collect/components/reusable_app_bar.dart';
 import 'package:eco_collect/components/reusable_bg_image.dart';
 import 'package:eco_collect/constants/kassets.dart';
-import 'package:eco_collect/constants/kdimens.dart';
 import 'package:eco_collect/constants/ktheme.dart';
 import 'package:eco_collect/providers/level_provider.dart';
 import 'package:eco_collect/providers/user_provider.dart';
@@ -23,6 +23,8 @@ class BadgeFullPagePreview extends StatelessWidget {
         Provider.of<UserDataProvider>(context, listen: false)
             .getUserData
             ?.trophies;
+
+    int trophyDifference = int.parse(requiredTrophies) - (currentTrophies ?? 0);
 
     return Scaffold(
       appBar: reusableAppBar(title: formattedTierName, actions: [
@@ -51,16 +53,19 @@ class BadgeFullPagePreview extends StatelessWidget {
                       borderRadius: BorderRadius.circular(1000.0),
                     ),
                     child: Text(
-                      int.parse(requiredTrophies) - (currentTrophies ?? 0) <= 0
-                          ? "Way to go! We've unlocked this badge, and we're just getting started. Let's keep the momentum going and conquer the next challenge together! 💪"
-                          : "Hey there! We're just ${int.parse(requiredTrophies) - (currentTrophies ?? 0)} trophies away from our goal. Let's crush it together! 💪",
+                      trophyDifference <= 0
+                          ? tr('badges_screen.message_unlocked')
+                          : tr('badges_screen.message_progress', namedArgs: {
+                              'trophyDifference': trophyDifference.toString()
+                            }),
                       style: KTheme.subtitleStyle
                           .copyWith(color: Colors.white, fontSize: 15.0),
                     ),
                   ),
                   LottieBuilder.asset(
                     KLottie.hero,
-                    width: KDimens.screenWidth,
+                    width: 400.0,
+                    height: 200.0,
                     fit: BoxFit.fill,
                   ),
                 ],

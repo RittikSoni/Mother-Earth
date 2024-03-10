@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:eco_collect/components/reusable_bg_image.dart';
 import 'package:eco_collect/components/reusable_top_character_dialogue.dart';
 import 'package:eco_collect/constants/kassets.dart';
@@ -32,9 +33,8 @@ class Leaderboard extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Column(
               children: [
-                const ReusableTopCharacterDialogue(
-                  message:
-                      "Welcome to the Leaderboard! Witness the triumphs of our Eco-Champions as their verified task videos light up the screen. Let their dedication inspire you to join the ranks of environmental warriors!",
+                ReusableTopCharacterDialogue(
+                  message: "leaderboard_screen.welcome_message".tr(),
                   explorerImagePath: KExplorers.explorer4,
                 ),
                 Commonfunctions.gapMultiplier(gapMultiplier: 0.5),
@@ -115,7 +115,7 @@ class Leaderboard extends StatelessWidget {
                 context: context,
                 page: FullPageLeaderboard(
                   messageToWorld: messageToWorld == "" || messageToWorld == null
-                      ? KStrings.defaultMessageToWorld
+                      ? 'dear_world_message'.tr()
                       : messageToWorld,
                   url: url ?? KStrings.defaultVideoUrl,
                   username: username ?? KStrings.defaultUsername,
@@ -139,7 +139,7 @@ class Leaderboard extends StatelessWidget {
                 Text(
                   messageToWorld == "" || messageToWorld == null
                       ? Commonfunctions.trimString(
-                          text: KStrings.defaultMessageToWorld)
+                          text: 'dear_world_message'.tr())
                       : Commonfunctions.trimString(text: messageToWorld),
                   style: const TextStyle(fontSize: 14.0),
                 ),

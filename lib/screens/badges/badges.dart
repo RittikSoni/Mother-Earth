@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:eco_collect/components/reusable_app_bar.dart';
 import 'package:eco_collect/components/reusable_bg_image.dart';
 import 'package:eco_collect/components/reusable_top_character_dialogue.dart';
@@ -39,8 +40,11 @@ class Badges extends StatelessWidget {
                 Column(
                   children: [
                     ReusableTopCharacterDialogue(
-                      message:
-                          "Congratulations! We've conquered the $formattedPlayerCurrentTier badge! Now, let's ignite our determination and tackle more tasks to soar to even greater heights. Remember, every small action fuels our journey to success!",
+                      message: tr('badges_screen.congratulations_message',
+                          namedArgs: {
+                            'formattedPlayerCurrentTier':
+                                formattedPlayerCurrentTier.toString()
+                          }),
                     ),
                     Commonfunctions.gapMultiplier(gapMultiplier: 0.5),
                     Expanded(
