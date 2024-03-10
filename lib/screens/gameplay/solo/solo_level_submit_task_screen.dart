@@ -59,9 +59,8 @@ class _SoloLevelSubmitTaskScreenState extends State<SoloLevelSubmitTaskScreen> {
                   key: _formKey,
                   onChanged: () => _formKey.currentState!.validate(),
                   child: ListView(shrinkWrap: true, children: [
-                    const ReusableTopCharacterDialogue(
-                      message:
-                          "Ready to become a sustainability hero? Share your completed task with the world! Simply paste the YouTube link of your accomplishment here. Once our team verifies it, your video will be proudly showcased on the Heroes tab, inspiring others to join our mission. Plus, claim your well-deserved rewards after verification. Your actions speak volumes – let's make waves together!",
+                    ReusableTopCharacterDialogue(
+                      message: 'task_submit_screen.ready_to_become_hero'.tr(),
                       explorerImagePath: KExplorers.explorer5,
                     ),
                     _gap(),
@@ -85,9 +84,10 @@ class _SoloLevelSubmitTaskScreenState extends State<SoloLevelSubmitTaskScreen> {
                           KShowcaseData.messageToWorldTextField.description,
                       child: ReusableTextFormField(
                         controller: messageToWorldController,
-                        label: 'Message To World',
+                        label: 'task_submit_screen.message_to_world'.tr(),
                         hintText:
-                            'I really enjoyed this task, i would recommend people to try it!!',
+                            'task_submit_screen.enjoyed_task_recommendation'
+                                .tr(),
                         minLines: 4,
                         maxLines: 4,
                         keyboardType: TextInputType.multiline,
@@ -154,10 +154,11 @@ class _SoloLevelSubmitTaskScreenState extends State<SoloLevelSubmitTaskScreen> {
                           } else if (_formKey.currentState!.validate()) {
                             KLoadingToast.showCharacterDialog(
                                 title: "Confirm Submission",
-                                message:
-                                    "Are you sure you want to submit your completed task? Your contribution will help us in our mission to create a cleaner and greener world. Once submitted, your task will be reviewed for verification. Let's make a positive impact together!",
-                                primaryLabel: "Submit Task",
-                                secondaryLabel: "Cancel",
+                                message: 'task_submit_screen.confirm_submission'
+                                    .tr(),
+                                primaryLabel:
+                                    "task_submit_screen.submit_task".tr(),
+                                secondaryLabel: "buttons.cancel".tr(),
                                 onPrimaryPressed: () async {
                                   try {
                                     await _submit();

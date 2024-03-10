@@ -31,6 +31,36 @@
     "message_progress": "Hey there! We're just {trophyDifference} trophies away from our goal. Let's crush it together! 💪"
   },
 
+  "task_submit_screen": {
+    "ready_to_become_hero": "Ready to become a sustainability hero? Share your completed task with the world! Simply paste the YouTube link of your accomplishment here. Once our team verifies it, your video will be proudly showcased on the Heroes tab, inspiring others to join our mission. Plus, claim your well-deserved rewards after verification. Your actions speak volumes – let's make waves together!",
+    "enjoyed_task_recommendation": "I thoroughly enjoyed this task and would highly recommend it to others! Let's inspire and motivate more people to join our cause!",
+    "message_to_world": "Message to the World",
+    "confirm_submission": "Are you sure you want to submit your completed task? Your contribution will help us in our mission to create a cleaner and greener world. Once submitted, your task will be reviewed for verification. Let's make a positive impact together!",
+    "submit_task": "Submit Task"
+  },
+
+  "mini_games_screen": {
+    "welcome_message": "Welcome to the Mini-Game Zone! Dive into fun-filled challenges designed to sharpen your eco-skills. Each game is a chance to learn, grow, and make a positive impact. Let's play and change the world, one game at a time!",
+    "coming_soon": "Exciting News Ahead!",
+    "coming_soon_details": "Hey there, eco-champion! I've got thrilling news to share. We're gearing up to unleash a wave of new mini-games soon! Get ready to embark on exciting eco-adventures and expand your impact. Stay tuned for updates!",
+    "count_me_in": "Count Me In!",
+    "gotf_game": {
+      "title": "Guardian of the Forest",
+      "message": "Welcome to GotF, where you become the guardian of the forest! Help protect our precious trees by guiding the axe safely through the forest, avoiding any contact that could harm them. Your skills will determine the fate of our green allies. Are you ready to embark on this noble quest?",
+      "primaryLabel": "Let's Save Trees!"
+    },
+    "light_saver_game": {
+      "title": "Light Saver: The Energy Guardian",
+      "message": "Welcome to Light Saver! Your mission is to switch off all the lights to conserve energy and protect the planet. Every light switched off is a step towards a greener future. Are you ready to illuminate the path to sustainability?",
+      "primaryLabel": "Let's Save Energy!"
+    },
+    "recycle_plastic_game": {
+      "title": "Recycle Plastic",
+      "description": "Welcome to Plastic Patrol, where you embark on an eco-adventure to clean up the environment! Your mission is to collect and recycle as many plastic bottles as possible while dodging traps and outsmarting enemies. The fate of our planet rests in your hands. Are you up for the challenge?",
+      "buttonLabel": "Let's Clean Up!"
+    }
+  },
+
   "buttons": {
     "settings": "Settings",
     "donate": "Donate",
