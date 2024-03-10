@@ -10,6 +10,7 @@ import 'package:eco_collect/routes/kroutes.dart';
 import 'package:eco_collect/screens/settings/settings.dart';
 import 'package:eco_collect/services/audio_services.dart';
 import 'package:eco_collect/utils/kloading.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -61,6 +62,18 @@ class Explore extends StatelessWidget {
                           }
                         });
                   }),
+              kIsWeb
+                  ? ReusableButton(
+                      label: 'Get it on Android',
+                      onTap: () async {
+                        await launchUrl(
+                          Uri.parse(KStrings.gameAndroidLink),
+                        );
+                      },
+                      icon: Icons.android,
+                      fg: Colors.green,
+                    )
+                  : const SizedBox(),
               ReusableButton(
                 label: 'buttons.logout'.tr(),
                 onTap: () async {

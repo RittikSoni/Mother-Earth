@@ -19,6 +19,10 @@ class KStrings {
   static const String donationLink =
       'https://www.globalcitizen.org/en/involved/donate/';
 
+  // Game Android Link
+  static const String gameAndroidLink =
+      'https://github.com/RittikSoni/Mother-Earth/releases';
+
   // Functional things
   static final dummyUserData = UserDataModel(
       fullName: 'Loading',
